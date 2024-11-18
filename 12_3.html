@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Події Другої світової війни</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="12_1.html">Завдання 1</a></li>
+            <li><a href="12_2.html">Завдання 2</a></li>
+            <li><a href="12_3.html">Завдання 3</a></li>
+            <li><a href="12_4.html">Завдання 4</a></li>
+            <li><a href="12_5.html">Завдання 5</a></li>
+            <li><a href="12_6.html">Завдання 6</a></li>
+        </ul>
+    </nav>
+    <script>
+        "use strict";
+        // Приклад використання switch з багатьма подіями Другої світової війни
+
+        document.write("<p style='text-align:center; font-size:20px; font-weight:bold;'>Події Другої світової війни</p>");
+
+        // Введення року користувачем
+        let year = parseInt(prompt("Введіть рік (1939-1945):"));
+
+        // Використання оператора switch
+        switch (year) {
+            case 1939:
+                document.write("<p><strong>1939 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>1 вересня: Німеччина вторглася до Польщі, початок війни.</li>");
+                document.write("<li>17 вересня: СРСР вторгся до східної Польщі.</li>");
+                document.write("<li>3 вересня: Велика Британія і Франція оголосили війну Німеччині.</li>");
+                document.write("</ul>");
+                break;
+            case 1940:
+                document.write("<p><strong>1940 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>10 травня: Німеччина окупувала Францію, Бельгію, Нідерланди та Люксембург.</li>");
+                document.write("<li>26 травня: Евакуація союзників з Дюнкерка.</li>");
+                document.write("<li>10 липня: Початок битви за Британію.</li>");
+                document.write("</ul>");
+                break;
+            case 1941:
+                document.write("<p><strong>1941 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>22 червня: Німеччина почала операцію \"Барбаросса\" проти СРСР.</li>");
+                document.write("<li>7 грудня: Японія атакувала Перл-Гарбор, США вступили у війну.</li>");
+                document.write("<li>Жовтень: Початок блокади Ленінграда.</li>");
+                document.write("</ul>");
+                break;
+            case 1942:
+                document.write("<p><strong>1942 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>4-7 червня: Морська битва біля Мідуея, перелом у війні на Тихому океані.</li>");
+                document.write("<li>17 липня: Початок битви за Сталінград.</li>");
+                document.write("<li>Осінь: Битва за Ель-Аламейн в Африці, перемога союзників.</li>");
+                document.write("</ul>");
+                break;
+            case 1943:
+                document.write("<p><strong>1943 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>2 лютого: Капітуляція німецьких військ у Сталінграді.</li>");
+                document.write("<li>5 липня: Битва на Курській дузі, найбільша танкова битва.</li>");
+                document.write("<li>10 липня: Висадка союзників на Сицилії.</li>");
+                document.write("</ul>");
+                break;
+            case 1944:
+                document.write("<p><strong>1944 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>6 червня: Висадка союзників у Нормандії (D-Day).</li>");
+                document.write("<li>22 червня: Початок операції \"Багратіон\" у Білорусі.</li>");
+                document.write("<li>25 серпня: Звільнення Парижа від німецької окупації.</li>");
+                document.write("</ul>");
+                break;
+            case 1945:
+                document.write("<p><strong>1945 рік:</strong></p>");
+                document.write("<ul>");
+                document.write("<li>30 квітня: Самогубство Гітлера у Берліні.</li>");
+                document.write("<li>8 травня: Капітуляція Німеччини, День Перемоги в Європі.</li>");
+                document.write("<li>6 і 9 серпня: Ядерні бомбардування Хіросіми та Нагасакі.</li>");
+                document.write("<li>2 вересня: Капітуляція Японії, кінець Другої світової війни.</li>");
+                document.write("</ul>");
+                break;
+            default:
+                document.write("<p>Введіть рік у діапазоні 1939-1945.</p>");
+                break;
+        }
+    </script>
+</body>
+</html>

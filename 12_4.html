@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Операції Першої світової війни</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="12_1.html">Завдання 1</a></li>
+            <li><a href="12_2.html">Завдання 2</a></li>
+            <li><a href="12_3.html">Завдання 3</a></li>
+            <li><a href="12_4.html">Завдання 4</a></li>
+            <li><a href="12_5.html">Завдання 5</a></li>
+            <li><a href="12_6.html">Завдання 6</a></li>
+        </ul>
+    </nav>
+    <script>
+        "use strict";
+
+        document.write("<p style='text-align:center; font-size:20px; font-weight:bold;'>Операції Першої світової війни (1914-1918)</p>");
+
+        // Масив із операціями війни та їх описами
+        const operations = [
+            { year: 1914, operation: "Операція 'Генеральний план' Німеччини", description: "План вторгнення в Бельгію та Францію" },
+            { year: 1915, operation: "Операція Дарданельська", description: "Морська операція союзників проти Османської імперії" },
+            { year: 1916, operation: "Битва на Соммі", description: "Масована наступальна операція Антанти на фронті в Франції" },
+            { year: 1917, operation: "Операція 'Відступ' на Західному фронті", description: "Німецька операція по укріпленню своїх позицій" },
+            { year: 1918, operation: "Операція на Східному фронті", description: "Останні спроби Німеччини захопити території Східної Європи" }
+        ];
+
+        // Використання циклу for для виведення операцій
+        document.write("<h3>Операції за допомогою циклу for:</h3>");
+        for (let i = 0; i < operations.length; i++) {
+            document.write(`<p><strong>${operations[i].year} рік:</strong> ${operations[i].operation} - ${operations[i].description}</p>`);
+        }
+
+        // Використання циклу while для виведення операцій
+        document.write("<h3>Операції за допомогою циклу while:</h3>");
+        let j = 0;
+        while (j < operations.length) {
+            document.write(`<p><strong>${operations[j].year} рік:</strong> ${operations[j].operation} - ${operations[j].description}</p>`);
+            j++;
+        }
+
+        // Використання циклу do while для виведення операцій
+        document.write("<h3>Операції за допомогою циклу do while:</h3>");
+        let k = 0;
+        do {
+            document.write(`<p><strong>${operations[k].year} рік:</strong> ${operations[k].operation} - ${operations[k].description}</p>`);
+            k++;
+        } while (k < operations.length);
+    </script>
+</body>
+</html>

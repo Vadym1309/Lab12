@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Німецькі танки "Тигр" під час Другої світової війни</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="12_1.html">Завдання 1</a></li>
+            <li><a href="12_2.html">Завдання 2</a></li>
+            <li><a href="12_3.html">Завдання 3</a></li>
+            <li><a href="12_4.html">Завдання 4</a></li>
+            <li><a href="12_5.html">Завдання 5</a></li>
+            <li><a href="12_6.html">Завдання 6</a></li>
+        </ul>
+    </nav>
+    <script>
+        "use strict";
+
+        document.write("<p style='text-align:center; font-size:20px; font-weight:bold;'>Німецькі танки 'Тигр' під час Другої світової війни</p>");
+
+        // Об'єкт з детальним описом танків "Тигр"
+        const tigerTanks = {
+            "Тигр I": {
+                year: 1942,
+                weight: "54,5 тонни",
+                armament: "75 мм гарматa KwK 42 L/70",
+                armor: "100-120 мм",
+                engine: "10-12 циліндровий двигун Maybach HL 210 P45",
+                speed: "38 км/год",
+                crew: "5 осіб",
+                description: "Тигр I — перший серійний важкий танк на основі танкової платформи, розроблений Німеччиною під час Другої світової війни. Його головними характеристиками були потужна гармата та товста броня, що робило його одним з найбільш грізних супротивників на полі бою.",
+                battles: [
+                    "Битва під Курськом (1943)",
+                    "Битва за Ставрополь (1942)",
+                    "Битва на Орне (1944)"
+                ]
+            },
+            "Тигр II": {
+                year: 1944,
+                weight: "69,8 тонни",
+                armament: "88 мм гарматa KwK 43 L/71",
+                armor: "80-150 мм",
+                engine: "12 циліндровий двигун Maybach HL 230 P30",
+                speed: "40 км/год",
+                crew: "5 осіб",
+                description: "Тигр II, також відомий як 'Король тигрів', був вдосконаленою версією танка Тигр I. Він мав ще товщу броню і більш потужну гармату, однак високий рівень маси обмежував мобільність і маневреність на полі бою.",
+                battles: [
+                    "Операція 'Цитадель' (1943)",
+                    "Битва під Арденнами (1944)",
+                    "Битва за Берлін (1945)"
+                ]
+            },
+            "Тигр 131": {
+                year: 1943,
+                weight: "57 тонн",
+                armament: "75 мм гарматa KwK 42 L/70",
+                armor: "100-120 мм",
+                engine: "12 циліндровий двигун Maybach HL 120 TRM",
+                speed: "38 км/год",
+                crew: "5 осіб",
+                description: "Тигр 131 — це єдиний танк Тигр, що зберігся до наших днів і знаходиться в музеї танків у Великій Британії. Він був захоплений британськими військами під час битви в Північній Африці та є цінним експонатом, що дає уявлення про конструкцію цього легендарного танка.",
+                battles: [
+                    "Битва при Газалі (1942)",
+                    "Битва на Лівійській пустелі (1942)"
+                ]
+            }
+        };
+
+        // Використання циклу for in для перебору властивостей об'єкта та виведення детальної інформації
+        document.write("<h3>Детальний опис танків 'Тигр' за допомогою циклу for in:</h3>");
+        for (let tank in tigerTanks) {
+            document.write(`<h4><strong>${tank}</strong> (Рік: ${tigerTanks[tank].year})</h4>`);
+            document.write(`<ul>
+                <li><strong>Вага:</strong> ${tigerTanks[tank].weight}</li>
+                <li><strong>Гармата:</strong> ${tigerTanks[tank].armament}</li>
+                <li><strong>Броня:</strong> ${tigerTanks[tank].armor}</li>
+                <li><strong>Двигун:</strong> ${tigerTanks[tank].engine}</li>
+                <li><strong>Максимальна швидкість:</strong> ${tigerTanks[tank].speed}</li>
+                <li><strong>Екіпаж:</strong> ${tigerTanks[tank].crew} осіб</li>
+                <li><strong>Опис:</strong> ${tigerTanks[tank].description}</li>
+                <li><strong>Основні битви:</strong>
+                    <ul>
+                        ${tigerTanks[tank].battles.map(battle => `<li>${battle}</li>`).join('')}
+                    </ul>
+                </li>
+            </ul>`);
+        }
+    </script>
+</body>
+</html>

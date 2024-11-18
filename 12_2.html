@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора IF</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="12_1.html">Завдання 1</a></li>
+            <li><a href="12_2.html">Завдання 2</a></li>
+            <li><a href="12_3.html">Завдання 3</a></li>
+            <li><a href="12_4.html">Завдання 4</a></li>
+            <li><a href="12_5.html">Завдання 5</a></li>
+            <li><a href="12_6.html">Завдання 6</a></li>
+        </ul>
+    </nav>
+    <script>
+        "use strict";
+        // Приклад знаходження найменшого числа за введеними значеннями
+
+        document.write("<p style='text-align:center'>Приклад знаходження найменшого числа</p>");
+
+        // Введення значень користувачем
+        let x = parseFloat(prompt("Введіть перше число (x):"));
+        let y = parseFloat(prompt("Введіть друге число (y):"));
+        let z = parseFloat(prompt("Введіть третє число (z):"));
+
+        // Знаходження найменшого числа
+        if (x < y && x < z) {
+            document.write("Найменше серед трьох чисел: x=", x);
+        } else if (y < z) {
+            document.write("Найменше серед трьох чисел: y=", y);
+        } else {
+            document.write("Найменше серед трьох чисел: z=", z);
+        }
+
+        // Використання тернарної операції
+        let min = x < y ? x : y;
+        min = min < z ? min : z;
+        document.write("<p>Значення найменшого серед трьох чисел: ", min);
+    </script>
+</body>
+</html>

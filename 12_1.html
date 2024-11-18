@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Визначення категорії за віком</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f9;
+				color: #333;
+				text-align: center;
+				padding: 20px;
+			}
+			h1 {
+				color: #4caf50;
+			}
+			.container {
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				padding: 20px;
+				max-width: 400px;
+				margin: 50px auto;
+			}
+			.result {
+				font-size: 18px;
+				color: #555;
+				margin-top: 20px;
+				padding: 10px;
+				border-radius: 5px;
+			}
+			.result.success {
+				color: #4caf50;
+				background: #e8f5e9;
+			}
+			.result.error {
+				color: #d32f2f;
+				background: #fdecea;
+			}
+		</style>
+	</head>	
+	<body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="12_1.html">Завдання 1</a></li>
+                <li><a href="12_2.html">Завдання 2</a></li>
+                <li><a href="12_3.html">Завдання 3</a></li>
+                <li><a href="12_4.html">Завдання 4</a></li>
+                <li><a href="12_5.html">Завдання 5</a></li>
+                <li><a href="12_6.html">Завдання 6</a></li>
+            </ul>
+        </nav>
+		<div class="container">
+			<h1>Визначення категорії за віком</h1>
+			<script>
+				"use strict";
+				
+				// Задання значення змінної age
+				let age = prompt("Введіть свій вік:");
+				let resultMessage = "";
+				let resultClass = "";
+
+				// Перетворення на число
+				age = Number(age);
+
+				// Перевірка значення змінної age
+				if (isNaN(age) || age <= 0) {
+					resultMessage = "Введено некоректний вік.";
+					resultClass = "error";
+				} else if (age < 13) {
+					resultMessage = "Категорія: Дитина.";
+					resultClass = "success";
+				} else if (age >= 13 && age < 18) {
+					resultMessage = "Категорія: Підліток.";
+					resultClass = "success";
+				} else if (age >= 18 && age < 60) {
+					resultMessage = "Категорія: Дорослий.";
+					resultClass = "success";
+				} else {
+					resultMessage = "Категорія: Пенсіонер.";
+					resultClass = "success";
+				}
+
+				// Виведення результату
+				document.write(`<div class="result ${resultClass}">${resultMessage}</div>`);
+			</script>
+		</div>
+	</body>
+</html>
